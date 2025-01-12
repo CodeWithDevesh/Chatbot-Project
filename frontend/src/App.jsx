@@ -13,7 +13,7 @@ function App() {
         if (!userInput) return alert("Please enter a message!");
 
         try {
-            const res = await axios.post("api/chat/", {
+            const res = await axios.post("https://chat-server-ten-brown.vercel.app/chat/", {
                 message: userInput,
                 conversation_history: conversationHistory
             });
